@@ -89,4 +89,36 @@ fn main() {
 
 // Warning: unused variable: `x`
 
+Destructuring
+8. 🌟🌟 We can use a pattern with let to destructure a tuple to separate variables.
+Tips: you can use Shadowing or Mutability
+// Fix the error below with least amount of modification
+fn main() {
+    let (mut x, mut y) = (1, 2);
+    x += 2;
+
+    assert_eq!(x, 3);
+    assert_eq!(y, 2);
+
+    println!("Success!");
+}
+
+Destructuring assignments
+Introduced in Rust 1.59: You can now use tuple, slice, and struct patterns as the left-hand side of an assignment.
+
+9. 🌟🌟
+Note: the feature Destructuring assignments need 1.59 or higher Rust version
+
+fn main() {
+    let (x, y);
+    (x,..) = (3, 4);
+    [.., y] = [1, 2];
+    // Fill the blank to make the code work
+    assert_eq!([x,y], [3,2]);
+
+    println!("Success!");
+} 
+
+
+//i was unable to answer most of these questions on my own.  i went back to read chapter 3 from the rust programming language after july 9 class.  i've asked people for recommended readings and practice.  if you have another other recommendations please let me know.  i'm willing to put in the work but need some guidance.
 
