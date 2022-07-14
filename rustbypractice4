@@ -1,5 +1,0 @@
-// Fix the error with the use of define_x
-fn main() {
-    let x = "hello";
-    println!("{x}, world"); 
-}
